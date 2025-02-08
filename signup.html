@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - FitFuel</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <h1>FitFuel</h1>
+    </header>
+    <main class="auth-container">
+        <div class="auth-card">
+            <h2>Sign Up</h2>
+            <form id="signup-form" action="/register" method="post"> <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" placeholder="Enter your weight in kg" required>
+                    </div>
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" placeholder="Enter your height in cm" required>
+                </div>
+                <div class="form-group">
+                    <label for="dietary_preferences">Dietary Preferences (Optional):</label>
+                    <textarea id="dietary_preferences" name="dietary_preferences" placeholder="e.g., Vegetarian, Vegan, Gluten-Free"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Sign Up</button>
+            </form>
+            <div class="auth-links">
+                <p>Already have an account? <a href="login.html">Login</a></p> </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 FitFuel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
